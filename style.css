@@ -11,11 +11,11 @@ body {
     height: 100vh;
 }
 
-body>div {
+body>* {
     border: 1px solid black;
 }
 
-.header {
+header {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,12 +25,12 @@ body>div {
     padding: 1rem;
 }
 
-.header p {
+header p {
     width: 50%;
     text-align: center;
 }
 
-.nav {
+nav {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -40,19 +40,19 @@ body>div {
     padding: 1rem;
 }
 
-.nav ul {
+nav ul {
     display: flex;
     column-gap: 2rem;
     align-items: center;
     justify-content: center;
 }
 
-.nav ul li {
+nav ul li {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.main {
+main {
     width: 75%;
     height: 100%;
     float: left;
@@ -64,32 +64,32 @@ body>div {
     padding: 1rem 0;
 }
 
-.main>div {
+main>.section {
     flex-basis: 33%;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
 }
 
-.main>div>h3 {
+main>.section>h3 {
     margin-bottom: 1rem;
 }
 
-.section-for-table,
-.section-for-iframe {
+.for-table,
+.for-iframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section-for-table table {
+.for-table table {
     width: 80%;
     border: 1px solid black;
 }
 
-.section-for-table table td,
-.section-for-table table th {
+.for-table table td,
+.for-table table th {
     border: 1px solid black;
 }
 
@@ -97,22 +97,22 @@ iframe {
     margin-bottom: 1rem;
 }
 
-.main>div:last-child {
+main>.section:last-child {
     border: none;
 }
 
-.article {
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.article details {
+article details {
     width: 80%;
 }
 
-.aside {
+aside {
     width: 25%;
     height: 100%;
     float: right;
@@ -123,7 +123,7 @@ iframe {
     padding: 1rem 0.5rem;
 }
 
-.aside>h3 {
+aside>h3 {
     margin-bottom: 1rem;
 }
 
@@ -151,7 +151,7 @@ button {
     padding: 0.5rem 0;
 }
 
-.footer {
+footer {
     width: 100%;
     clear: both;
     text-align: center;
